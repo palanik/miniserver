@@ -1,10 +1,10 @@
 {
   "name": "miniserver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mini http server, serving static files",
   "main": "lib/index.js",
   "bin": {
-    "serve": "./bin/miniserver"
+    "miniserver": "./bin/miniserver"
   },
   "preferGlobal": true,
   "babel": {
