@@ -16,8 +16,20 @@ export default class App {
     return this;
   }
 
-  use(mw) {
-    this.middlewares.push(mw);
+  use(...mws) {
+    if (mws.length === 1) {
+      const mw = mws[0];
+      if (Array.isArray(mw)) {
+        return this.use(...mw);
+      }
+      this.middlewares.push(mw);
+      return this;
+    }
+
+    mws.forEach((mw) => {
+      this.use(mw);
+    });
+
     return this;
   }
 
