@@ -3,6 +3,8 @@ Mini http server, serving static files.
 
 > A server for developers and by developers.
 
+[![NPM version](https://img.shields.io/npm/v/miniserver.svg?style=flat)](https://www.npmjs.org/package/miniserver)
+
 ## Installation
 ```
 $ npm install miniserver -g
@@ -16,12 +18,12 @@ $ miniserver
 
 To serve specific folder:
 ```
-$ miniserver projects\dream
+$ miniserver projects/dream
 ```
 
 To run on production mode:
 ```
-$ NODE_ENV=production miniserver projects\dream
+$ NODE_ENV=production miniserver projects/dream
 ```
 
 
